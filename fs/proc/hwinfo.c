@@ -232,4 +232,4 @@ static int __init proc_hwinfo_init(void)
 	proc_create("hwinfo", 0, NULL, &hwinfo_proc_fops);
 	return 0;
 }
-module_init(proc_hwinfo_init);
+fs_initcall(proc_hwinfo_init);
